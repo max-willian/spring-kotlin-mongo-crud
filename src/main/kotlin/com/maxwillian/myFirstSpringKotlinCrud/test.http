@@ -1,0 +1,28 @@
+### C
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "name": "Dark Knight",
+  "author": "Frank Miller",
+  "code": "123",
+  "price": "9000"
+}
+
+### R
+GET http://localhost:8080/books
+Content-Type: application/json
+
+### U
+PUT http://localhost:8080/books/123
+Content-Type: application/json
+
+{
+  "name": "Dark Knight Definitive Edition",
+  "author": "Frank Miller",
+  "code": "123",
+  "price": "10000"
+}
+
+### D
+DELETE http://localhost:8080/books/123
